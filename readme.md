@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Chioma James Nwachukwu**
 
-- Github: [@Gnwin](https://github.com/chiomy)
+- Github: [@chiomy](https://github.com/chiomy)
 - Linkedin: [@chioma]
 
 ## 🤝 Contributing
