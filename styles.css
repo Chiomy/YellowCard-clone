@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --white: #fff;
+  --yellow: #fee4ae;
+  --light-yellow: #fef2d7;
+  --dark-yellow: #fdd98d;
+  --deep-yellow: #feb224;
+}
+
+/* animation boxes */
+
+/* .ba {
+  height: 400px;
+  width: 350px;
+  left: 1000px;
+  position: relative;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+  border-radius: 10px;
+  z-index: -2;
+}
+
+.box-light {
+  background: var(--light-yellow);
+  top: -300px;
+  animation-name: bend1;
+  animation-duration: 2s;
+}
+
+.box-normal {
+  background: var(--yellow);
+  top: -700px;
+  animation-name: bend2;
+  animation-duration: 3s;
+}
+
+.box-dark {
+  background-color: var(--dark-yellow);
+  top: -1100px;
+  animation-name: bend3;
+  animation-duration: 4s;
+}
+
+@keyframes bend1 {
+  0% {
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+  }
+  to {
+    transform: rotate(-75deg);
+    transform-origin: 30% 60%;
+  }
+}
+
+@keyframes bend2 {
+  0% {
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+  }
+  to {
+    transform: rotate(-70deg);
+    transform-origin: 30% 57%;
+  }
+}
+
+@keyframes bend3 {
+  0% {
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+  }
+  to {
+    transform: rotate(-65deg);
+    transform-origin: 30% 55%;
+  }
+} */
+
+/* @keyframes bend1 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateZ(-80deg);
+  }
+}
+
+/* general */
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Scammers Info */
+#top-info {
+  background-color: var(--deep-yellow);
+  color: var(--white);
+  font-size: 14px;
+  padding: 20px;
+}
+
+.top-text {
+  width: 50%;
+}
+
+/* Header / Nav */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+  background-color: transparent;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.navList {
+  list-style-type: none;
+}
+
+.menu {
+  display: inline-block;
+  padding: 0 1.5rem;
+}
+
+.sign-img {
+  width: 25px;
+}
+
+.sign-link {
+  display: flex;
+  align-items: center;
+  background-color: var(--deep-yellow);
+  border-radius: 20px;
+  padding: 5px 10px;
+  /* box-shadow: #000; */
+}
+
+.menu1 {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* store */
+.store {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* overflow-x: hidden; */
+}
+
+.store-text {
+  padding: 100px 20px 0px 50px;
+}
+
+.store-text-child h1 {
+  font-size: 45px;
+  line-height: 3rem;
+}
+
+.store-text-child p {
+  font-size: 16px;
+  line-height: 1.4rem;
+  padding: 30px 0;
+}
+
+.store-img {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.bitButton,
+.bitMerchant {
+  width: 30%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bolder;
+}
+
+.bitButton {
+  background: var(--deep-yellow);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.bitMerchant {
+  background: var(--white);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.bitButton:hover {
+  background-color: var(--dark-yellow);
+  transition: all 0.15s ease;
+}
+
+.bitMerchant:hover {
+  transition: all 0.15s ease;
+  background-color: whitesmoke;
+}
+
+.boxes {
+  position: absolute;
+  background-color: var(--white);
+  z-index: -1;
+  left: 290px;
+  /* padding-right: 50px;
+  margin: 0 auto; */
+  /* text-align: center; */
+}
+
+.card-img1 {
+  height: 450px;
+  width: 350px;
+  background-color: var(--light-yellow);
+  z-index: 2;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+  animation-name: bend1;
+  animation-duration: 3s;
+}
+
+.card-img2 {
+  height: 450px;
+  width: 350px;
+  background-color: var(--dark-yellow);
+  z-index: 2;
+  position: relative;
+  /* top: -150px; */
+  margin-top: -450px;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+  animation-name: bend2;
+  animation-duration: 3s;
+}
+
+.card-img3 {
+  height: 450px;
+  width: 350px;
+  background-color: var(--deep-yellow);
+  position: relative;
+  margin-top: -450px;
+  /* top: -300px; */
+  z-index: 2;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+  animation-name: bend3;
+  animation-duration: 3s;
+}
+
+@keyframes bend1 {
+  0% {
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+  }
+  to {
+    transform: rotate(-75deg);
+    transform-origin: 30% 60%;
+  }
+}
+
+@keyframes bend2 {
+  0% {
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+  }
+  to {
+    transform: rotate(-70deg);
+    transform-origin: 30% 57%;
+  }
+}
+
+@keyframes bend3 {
+  0% {
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+  }
+  to {
+    transform: rotate(-65deg);
+    transform-origin: 30% 55%;
+  }
+}
+
+.hero {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.waka {
+  width: 450px;
+}
+
+/* Buy Bit */
+.buyBit {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* showcase */
+.showcase {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
